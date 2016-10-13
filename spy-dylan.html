@@ -1,0 +1,134 @@
+<h1>Instructions</h1>
+Write a spy program that encrypts a message and then decrypts it.<br>
+
+
+
+
+<textarea rows=6 cols=70 id=myAreaIn>A happy puppy</textarea>
+
+
+
+
+<br><input type=button value=Encrypt onClick="{
+   myTemp=''   
+   document.all.myAreaOut.value=''
+   for(myCount=0; myCount<document.all.myAreaIn.value.length; myCount++){
+	if(document.all.myAreaIn.value[myCount] =='a'){document.all.myAreaOut.value += 'q'}
+	if(document.all.myAreaIn.value[myCount] =='b'){document.all.myAreaOut.value += 'a'}
+	if(document.all.myAreaIn.value[myCount] =='c'){document.all.myAreaOut.value += 'z'}
+	if(document.all.myAreaIn.value[myCount] =='d'){document.all.myAreaOut.value += 'w'}
+	if(document.all.myAreaIn.value[myCount] =='e'){document.all.myAreaOut.value += 's'}
+	if(document.all.myAreaIn.value[myCount] =='f'){document.all.myAreaOut.value += 'x'}
+	if(document.all.myAreaIn.value[myCount] =='g'){document.all.myAreaOut.value += 'e'}
+	if(document.all.myAreaIn.value[myCount] =='h'){document.all.myAreaOut.value += 'd'}
+	if(document.all.myAreaIn.value[myCount] =='i'){document.all.myAreaOut.value += 'c'}
+	if(document.all.myAreaIn.value[myCount] =='j'){document.all.myAreaOut.value += 'r'}
+	if(document.all.myAreaIn.value[myCount] =='k'){document.all.myAreaOut.value += 'f'}
+	if(document.all.myAreaIn.value[myCount] =='l'){document.all.myAreaOut.value += 'v'}
+	if(document.all.myAreaIn.value[myCount] =='m'){document.all.myAreaOut.value += 't'}
+	if(document.all.myAreaIn.value[myCount] =='n'){document.all.myAreaOut.value += 'g'}
+	if(document.all.myAreaIn.value[myCount] =='o'){document.all.myAreaOut.value += 'b'}
+	if(document.all.myAreaIn.value[myCount] =='p'){document.all.myAreaOut.value += 'y'}
+	if(document.all.myAreaIn.value[myCount] =='q'){document.all.myAreaOut.value += 'h'}
+	if(document.all.myAreaIn.value[myCount] =='r'){document.all.myAreaOut.value += 'n'}
+	if(document.all.myAreaIn.value[myCount] =='s'){document.all.myAreaOut.value += 'u'}
+	if(document.all.myAreaIn.value[myCount] =='t'){document.all.myAreaOut.value += 'j'}
+	if(document.all.myAreaIn.value[myCount] =='u'){document.all.myAreaOut.value += 'm'}
+	if(document.all.myAreaIn.value[myCount] =='v'){document.all.myAreaOut.value += 'i'}
+	if(document.all.myAreaIn.value[myCount] =='w'){document.all.myAreaOut.value += 'k'}
+	if(document.all.myAreaIn.value[myCount] =='x'){document.all.myAreaOut.value += 'o'}
+	if(document.all.myAreaIn.value[myCount] =='y'){document.all.myAreaOut.value += 'l'}
+	if(document.all.myAreaIn.value[myCount] =='z'){document.all.myAreaOut.value += 'p'}
+	if(document.all.myAreaIn.value[myCount] ==' '){document.all.myAreaOut.value += '?'}
+	
+	
+
+ 
+   }
+}">
+
+<br>
+<textarea rows=6 cols=70 id=myAreaOut>Encrypted goes here</textarea>
+
+
+<br><input type=button value=Decrypt  onClick="{
+   myTemp=''
+   document.all.myProof.value=''
+   for(myCount=0; myCount<document.all.myAreaOut.value.length; myCount++){
+	if(document.all.myAreaOut.value[myCount] =='a'){document.all.myProof.value += 'y'}
+
+
+	if(document.all.myAreaOut.value[myCount] =='q'){document.all.myProof.value += 'a'}
+	if(document.all.myAreaOut.value[myCount] =='a'){document.all.myProof.value += 'b'}
+	if(document.all.myAreaOut.value[myCount] =='z'){document.all.myProof.value += 'c'}
+	if(document.all.myAreaOut.value[myCount] =='w'){document.all.myProof.value += 'd'}
+	if(document.all.myAreaOut.value[myCount] =='s'){document.all.myProof.value += 'e'}
+	if(document.all.myAreaOut.value[myCount] =='x'){document.all.myProof.value += 'f'}
+	if(document.all.myAreaOut.value[myCount] =='e'){document.all.myProof.value += 'g'}
+	if(document.all.myAreaOut.value[myCount] =='d'){document.all.myProof.value += 'h'}
+	if(document.all.myAreaOut.value[myCount] =='c'){document.all.myProof.value += 'i'}
+	if(document.all.myAreaOut.value[myCount] =='r'){document.all.myProof.value += 'j'}
+	if(document.all.myAreaOut.value[myCount] =='f'){document.all.myProof.value += 'k'}
+	if(document.all.myAreaOut.value[myCount] =='v'){document.all.myProof.value += 'l'}
+	if(document.all.myAreaOut.value[myCount] =='t'){document.all.myProof.value += 'm'}
+	if(document.all.myAreaOut.value[myCount] =='g'){document.all.myProof.value += 'n'}
+	if(document.all.myAreaOut.value[myCount] =='b'){document.all.myProof.value += 'o'}
+	if(document.all.myAreaout.value[myCount] =='y'){document.all.myProof.value += 'p'}
+	if(document.all.myAreaOut.value[myCount] =='h'){document.all.myProof.value += 'q'}
+	if(document.all.myAreaOut.value[myCount] =='n'){document.all.myProof.value += 'r'}
+	if(document.all.myAreaout.value[myCount] =='u'){document.all.myProof.value += 's'}
+	if(document.all.myAreaOut.value[myCount] =='j'){document.all.myProof.value += 't'}
+	if(document.all.myAreaOut.value[myCount] =='m'){document.all.myProof.value += 'u'}
+	if(document.all.myAreaOut.value[myCount] =='i'){document.all.myProof.value += 'v'}
+	if(document.all.myAreaOut.value[myCount] =='k'){document.all.myProof.value += 'w'}
+	if(document.all.myAreaOut.value[myCount] =='o'){document.all.myProof.value += 'x'}
+	if(document.all.myAreaOut.value[myCount] =='l'){document.all.myProof.value += 'y'}
+	if(document.all.myAreaOut.value[myCount] =='p'){document.all.myProof.value += 'z'}
+	if(document.all.myAreaOut.value[myCount] ==' '){document.all.myProof.value += '?'}
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   }
+}">
+
+<br><textarea rows=6 cols=70 id=myProof>Decrypted goes here</textarea>
+
+
+
+
+
+
+
+<br>At the bottom of every page make sure you include the following button:<br>
+
+<input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}"><br><br>

@@ -1,0 +1,83 @@
+<h1 align=center  >T1A11-Rock-Paper-Scissors-dylan.html</h2>
+
+
+Attempts: <input type=text id="myAttempts" value=0>
+
+
+<input type=button value="Rock" onclick="{
+document.getElementById('myImage1').src= 'rock.png'
+
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   if (document.myRandom == 1){
+   
+   document.myOutcome = 'Tie'
+   }
+   
+   if (document.myRandom == 2){
+   document.myOutcome = 'Win'
+   } 
+   
+   if (document.myRandom == 3){
+   document.myOutcome = 'Lose'
+   }
+   
+   document.getElementById('myOut').innerHTML = 'Rock ' + document.myOutcome
+}">
+
+
+<div id="myOut">Output here</div>
+
+<input type=button value="Scissors" onclick="{
+document.getElementById('myImage1').src=
+'scissors.jpg'
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   if (document.myRandom == 1){
+   document.myOutcome = 'Tie'
+   }
+   
+   if (document.myRandom == 2){
+   document.myOutcome = 'Win'
+   } 
+   
+   if (document.myRandom == 3){
+   document.myOutcome = 'Lose'
+   }
+   
+   document.getElementById('myOut').innerHTML = 'Scissors ' + document.myOutcome
+}">
+
+<input type=button value="Paper" onclick="{
+document.getElementById('myImage1').src=
+'paper.gif'
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   if (document.myRandom == 1){
+   document.myOutcome = 'Tie'
+   }
+   
+   if (document.myRandom == 2){
+   document.myOutcome = 'Win'
+   } 
+   
+   if (document.myRandom == 3){
+   document.myOutcome = 'Lose'
+   }
+   
+   document.getElementById('myOut').innerHTML = 'Paper ' + document.myOutcome
+}">
+
+
+
+
+
+<div id="myOut1">Outputhere</div>
+
+<img id="myImage1" src="" width=100>
+
+
+
+
+
+

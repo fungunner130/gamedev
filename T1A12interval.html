@@ -1,0 +1,55 @@
+
+<h1 align<=center> Interval by dylan<h1/>
+
+
+
+<html>
+<body>
+
+<img src="triggered.jpg" id="myout" alt="Mountain View" style="width:304px;height:228px;position:absolute;left:500;top:100;">
+
+
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    setInterval(function(){
+        
+    var left = Math.floor((Math.random() * 100) -49);
+    var top = Math.floor((Math.random() * 100) -49);
+    
+    
+    
+document.all.myout.style.top = parseInt(document.all.myout.style.top)+ top+ 'px'
+document.all.myout.style.left = parseInt(document.all.myout.style.left)+ left+ 'px'    
+        
+        
+        var playerx = parseInt(document.all.myout.style.left);
+        var playery = parseInt(document.all.myout.style.top);
+        
+        if(playerx < '10'){
+            
+            document.all.myout.style.left = parseInt(document.all.myout.style.left)+ 50+ 'px'  
+        }
+        if(playerx > '990'){
+            
+            document.all.myout.style.left = parseInt(document.all.myout.style.left) -50+ 'px'  
+        }
+        if (playery< '10'){
+            
+            document.all.myout.style.top = parseInt(document.all.myout.style.top)+ 50+ 'px'  
+        }
+         if (playery> '600'){
+            
+            document.all.myout.style.top = parseInt(document.all.myout.style.top)- 50+ 'px'  
+        }
+        
+        
+    }, 5);
+}
+</script>
+
+</body>
+
+</html>

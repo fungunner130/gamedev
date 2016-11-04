@@ -1,0 +1,74 @@
+
+
+<body onkeypress="{
+  document.getElementById('myOut1').innerHTML = 
+  String.fromCharCode(event.keyCode) + ' = ' + event.keyCode
+
+}">
+
+<h1 align=center> Events by dylan</h1>
+
+This <b onClick="{
+  alert('hi')
+}"> is Bold </b> not this.<br><br><br><br>
+
+<input type=text value=dylan id="myText1" onselect="{ 
+  document.getElementById('myOut1').innerHTML = 
+  document.all.myText1.value
+}">
+
+<div id="myOut1">  Output goes here</div>
+
+</body>
+
+
+   <html>
+   <head>
+   
+      <script type="text/javascript">
+         <!--
+            function over() {
+                document.getElementById('division').innerHTML = "dab"
+            }
+            
+            function out() {
+                 document.getElementById('division').innerHTML = "my dad"
+            }
+            
+         //-->
+      </script>
+      
+   </head>
+   <body>
+      <p>Bring your mouse inside the division to see the result:</p>
+      
+      <div id="division" onmouseover="over()" onmouseout="out()">
+         <h2> This is inside the division </h2>
+      </div>
+         
+   </body>
+
+
+
+</body>
+
+<body onload="myFunction()">
+
+dab
+<script>
+function myFunction() {
+    alert("Page is loaded");
+}
+</script>
+
+
+Enter your name: <input type="text" name="fname" id="fname" onblur="myFunction()">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+}
+</script>
